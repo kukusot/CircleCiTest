@@ -29,7 +29,7 @@ jobs:
           command: ./gradlew lint test
       - run:
           name: AssebbleDebug
-          command: ./gradlew assembleDebug
+          command: ./gradlew assembleDebug assembleRelease
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: app/build/reports
           destination: reports
